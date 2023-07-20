@@ -878,6 +878,7 @@ img {
 .modal-checkbox:checked + .check-text span {
   background-color: var(--iris-color);
   border: none;
+  fill: #f4f4fd;
 }
 
 .modal-checkbox:checked + .check-text span svg {
