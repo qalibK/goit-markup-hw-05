@@ -40,8 +40,8 @@ button {
   outline: none;
 }
 
-a {
-  outline: none;
+a:focus {
+  outline: 1px solid var(--iris-accent-color);
 }
 
 .container {
@@ -871,8 +871,8 @@ img {
   margin-bottom: 16px;
 }
 
-.modal-checkbox:focus {
-  outline: none;
+.modal-checkbox:focus + .check-text span {
+  border: 1px solid var(--iris-accent-color);
 }
 
 .modal-checkbox:checked + .check-text span {
@@ -892,6 +892,10 @@ img {
 .modal-checkbox:checked .modal-checkbox-accent {
   background-color: var(--iris-color);
   fill: #f4f4fd;
+}
+
+.modal-checkbox-accent:focus {
+  border: 1px solid var(--iris-accent-color);
 }
 
 .modal-checkbox-accent {
